@@ -57,6 +57,34 @@
       text-decoration: none;
       font-weight: 600;
     }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      box-sizing: border-box;
+    }
+    form label {
+      font-weight: 600;
+      margin-top: 1rem;
+      display: block;
+    }
+    form button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #ff8000;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    form button:hover {
+      background-color: #e67000;
+    }
   </style>
 </head>
 <body>
@@ -93,27 +121,27 @@
     <div class="card">
       <h2>Skontaktuj się z nami</h2>
       <p>Masz firmę i chcesz ruszyć z nową stroną lub automatyzacją? Odezwij się – zrobimy to za Ciebie.</p>
-      <a href="mailto:rafal.lobocki@gmail.com" class="cta">Napisz do nas</a>
+      <a href="mailto:rafson2137@gmail.com" class="cta">Napisz do nas</a>
     </div>
-    <div class="card">
-  <h2>Wyślij wiadomość</h2>
-  <form action="https://formspree.io/f/xvgrbqnl" method="POST">
-    <label>
-      Twoje imię:
-      <input type="text" name="name" required>
-    </label><br><br>
-    <label>
-      Twój e-mail:
-      <input type="email" name="_replyto" required>
-    </label><br><br>
-    <label>
-      Wiadomość:
-      <textarea name="message" rows="5" required></textarea>
-    </label><br><br>
-    <button type="submit">Wyślij</button>
-  </form>
-</div>
 
+    <div class="card">
+      <h2>Wyślij wiadomość</h2>
+      <form action="https://formspree.io/f/xvgrbqnl" method="POST">
+        <label>Imię i nazwisko
+          <input type="text" name="name" required>
+        </label>
+        <label>Twój e-mail
+          <input type="email" name="_replyto" required>
+        </label>
+        <label>Temat
+          <input type="text" name="subject" required>
+        </label>
+        <label>Wiadomość
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+        <button type="submit">Wyślij wiadomość 🚀</button>
+      </form>
+    </div>
   </section>
 
   <footer>
