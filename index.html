@@ -3,73 +3,53 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AutomatykaDlaFirm.pl – Nowoczesne Rozwiązania dla Twojego Biznesu</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <title>AutomatykaDlaFirm.pl</title>
   <style>
     body {
+      font-family: 'Arial', sans-serif;
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #f9f9f9;
+      padding: 0;
+      background: #f4f4f4;
       color: #333;
     }
     header {
-      background-color: #0d0d0d;
+      background: #0d0d0d;
       color: white;
       padding: 2rem;
       text-align: center;
-    }
-    h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-    }
-    p.subtitle {
-      font-size: 1.2rem;
-      margin-top: 0;
     }
     .section {
-      padding: 3rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
-      background-color: white;
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
       padding: 2rem;
-      margin-bottom: 2rem;
       border-radius: 1rem;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      box-shadow: 0 0 20px rgba(0,0,0,0.1);
     }
-    .card h2 {
+    h1, h2 {
       margin-top: 0;
-    }
-    footer {
-      background-color: #0d0d0d;
-      color: white;
-      text-align: center;
-      padding: 1rem;
     }
     .cta {
       display: inline-block;
-      margin-top: 1rem;
-      padding: 0.75rem 1.5rem;
-      background-color: #ff8000;
+      background: #ff8000;
       color: white;
+      padding: 1rem 2rem;
+      margin-top: 1rem;
+      border: none;
       border-radius: 0.5rem;
+      font-weight: bold;
       text-decoration: none;
-      font-weight: 600;
+    }
+    form label {
+      display: block;
+      margin: 1rem 0 0.5rem;
     }
     form input, form textarea {
       width: 100%;
       padding: 0.75rem;
-      margin-top: 0.5rem;
       border: 1px solid #ccc;
       border-radius: 0.5rem;
       font-size: 1rem;
-      box-sizing: border-box;
-    }
-    form label {
-      font-weight: 600;
-      margin-top: 1rem;
-      display: block;
     }
     form button {
       margin-top: 1rem;
@@ -83,69 +63,53 @@
       cursor: pointer;
     }
     form button:hover {
-      background-color: #e67000;
+      background-color: #e76f00;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #0d0d0d;
+      color: white;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>AutomatykaDlaFirm.pl</h1>
-    <p class="subtitle">Strony WWW, AI i automatyzacje dla małych firm – szybko, prosto i skutecznie</p>
+    <p>Tworzymy strony, automaty i AI dla małych firm</p>
   </header>
 
-  <section class="section">
-    <div class="card">
-      <h2>Co robimy?</h2>
-      <p>Tworzymy nowoczesne strony internetowe, wdrażamy sztuczną inteligencję i automatyzujemy procesy w mikrofirmach. Specjalizujemy się w szybkich wdrożeniach i dopasowanych rozwiązaniach.</p>
-    </div>
+  <div class="section">
+    <h2>Nasze usługi</h2>
+    <ul>
+      <li>✅ Strony internetowe w 48h</li>
+      <li>✅ Chatboty, oferty AI, copywriting</li>
+      <li>✅ Wizytówki Google, SEO lokalne</li>
+    </ul>
+    <a href="mailto:rafson2137@gmail.com" class="cta">Napisz do nas</a>
+  </div>
 
-    <div class="card">
-      <h2>Nasze usługi</h2>
-      <ul>
-        <li>⚡ Strony internetowe w 48h</li>
-        <li>🤖 Chatboty i AI do ofert i obsługi klienta</li>
-        <li>🧠 Automatyzacja social media i mailingu</li>
-        <li>🔍 Wizytówki Google i lokalne SEO</li>
-      </ul>
-    </div>
+  <div class="section">
+    <h2>Formularz kontaktowy</h2>
+    <form action="https://formspree.io/f/xvgrbqnl" method="POST">
+      <label for="name">Imię i nazwisko:</label>
+      <input type="text" id="name" name="name" required>
 
-    <div class="card">
-      <h2>Cennik</h2>
-      <ul>
-        <li>Pakiet Start: strona + wizytówka Google – <strong>1200 zł</strong></li>
-        <li>AI Copy + automatyzacja ofert – <strong>800 zł</strong></li>
-        <li>Obsługa miesięczna – <strong>od 300 zł</strong></li>
-      </ul>
-    </div>
+      <label for="email">Twój e-mail:</label>
+      <input type="email" id="email" name="_replyto" required>
 
-    <div class="card">
-      <h2>Skontaktuj się z nami</h2>
-      <p>Masz firmę i chcesz ruszyć z nową stroną lub automatyzacją? Odezwij się – zrobimy to za Ciebie.</p>
-      <a href="mailto:rafson2137@gmail.com" class="cta">Napisz do nas</a>
-    </div>
+      <label for="message">Wiadomość:</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
 
-    <div class="card">
-      <h2>Wyślij wiadomość</h2>
-      <form action="https://formspree.io/f/xvgrbqnl" method="POST">
-        <label>Imię i nazwisko
-          <input type="text" name="name" required>
-        </label>
-        <label>Twój e-mail
-          <input type="email" name="_replyto" required>
-        </label>
-        <label>Temat
-          <input type="text" name="subject" required>
-        </label>
-        <label>Wiadomość
-          <textarea name="message" rows="6" required></textarea>
-        </label>
-        <button type="submit">Wyślij wiadomość 🚀</button>
-      </form>
-    </div>
-  </section>
+      <button type="submit">Wyślij wiadomość 🚀</button>
+    </form>
+  </div>
 
   <footer>
-    <p>&copy; 2025 AutomatykaDlaFirm.pl – Wszystkie prawa zastrzeżone</p>
+    &copy; 2025 AutomatykaDlaFirm.pl – Wszelkie prawa zastrzeżone
   </footer>
+
 </body>
 </html>
